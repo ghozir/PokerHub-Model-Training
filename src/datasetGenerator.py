@@ -37,7 +37,7 @@ def simulate_winrate(hole_cards, num_players=2, simulations=1000):
     lose_rate = round(1 - winrate - tie_rate, 4)
     return winrate, tie_rate, lose_rate
 
-def generate_dataset(simulations_per_data, data_per_player_count, output_file="poker_dataset.csv"):
+def generate_dataset(simulations_per_data, data_per_player_count, output_file="datasets/dataset.csv"):
     fieldnames = [
         "hole_cards", "board", "position", "num_players", "pot_size", "stack",
         "call_amount", "action_history", "stage", "winrate", "label"
